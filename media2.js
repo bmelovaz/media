@@ -5,6 +5,10 @@ const rl = readline.createInterface({
     output: process.stdout
 })
 
+function limiteNota(a,b,c){
+    console.log('Num fora do range!') 
+}
+
 rl.question('Informe a primeira a nota: ', (N1) => {
     rl.question('Informe a segunda nota: ', (N2) => {
         rl.question('Informe a terceira nota: ', (N3) => {
